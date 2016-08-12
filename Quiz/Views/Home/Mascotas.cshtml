@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Pets Page";
+}
+
+<div class="hero-unit">
+    <h2>LISTADO DE MASCOTAS</h2>
+    <div>
+        <table id="tblListPets" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>NOMBRE: </th>
+                    <th>RAZA: </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <h2>BUSCAR POR ID</h2>
+    <div>
+        <ul>
+            <li>
+                <label>Id: </label>
+                <input type="text" id="txtIdSearch" />
+                <input type="button" class="btn btn-success" id="btnSearch" value="Buscar ID" />
+            </li>
+            <br />
+            <li>
+                <label>NOMBRE: </label>
+                <input type="text" id="txtPetName" />
+            </li>
+            <br />
+            <li>
+                <label>RAZA: </label>
+                <input type="text" id="txtRaza" />
+            </li>
+            <br />
+            <br />
+            <li>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="button" class="btn btn-primary" id="btnCreate" value="CREAR" />
+                        <input type="button" class="btn btn-primary" id="btnUpdate" value="ACTUALIZAR DATOS" />
+                        <input type="button" class="btn btn-primary" id="btnDelete" value="BORRAR MASCOTA" />
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

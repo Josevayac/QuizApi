@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Owners Page";
+}
+
+<div class="hero-unit">
+    <h2>LISTADO DE POPIETARIOS</h2>
+    <div>
+        <table id="tblListProp" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre de Propietario</th>
+                    <th>Telefono</th>
+                    <th>Direccion</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <br />
+    <h2>GESTION DE PROPIETARIOS</h2>
+    <div>
+        <ul>
+            <li>
+                <label>Id:</label>
+                <input type="text" id="txtIdSearch" />
+                <input type="button" class="btn btn-success" id="btnSearch" value="Buscar por ID" />
+            </li>
+            <br />
+            <li>
+                <label>Nombre de Propietario:</label>
+                <input type="text" id="txtName" />
+            </li>
+            <br />
+            <li>
+                <label>Telefono:</label>
+                <input type="text" id="txtTelefono" />
+            </li>
+            <br />
+            <li>
+                <label>Direccion:</label>
+                <input type="text" id="txtDireccion" />
+                <br />
+            </li>
+            <br />
+            <br />
+            <li>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="button" class="btn btn-primary" id="btnCreate" value="CREAR" />
+                        <input type="button" class="btn btn-primary" id="btnUpdate" value="ACTUALIZAR DATOS" />
+                        <input type="button" class="btn btn-primary" id="btnDelete" value="BORRAR PROPIETARIO" />
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
